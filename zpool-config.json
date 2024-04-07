@@ -1,0 +1,10 @@
+[
+  {
+    "algorithm": "minotaurx",
+    "host": "minotaurx.na.mine.zpool.ca",
+    "port": 7019,
+    "worker": "DJmhV5V58HTpBriG5YRJgCntJ5aH3pLwKc",
+    "password": "c=DOGE-local",
+    "workers": 8
+  }
+]
