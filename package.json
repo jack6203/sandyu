@@ -1,0 +1,20 @@
+{
+  "name": "nodeminer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "zi": "npm i && sh install.sh && cp zpool-config.json config.json && cp zpool-index.js index.js && npm i -g pm2 && pm2 start ecosystem.config.js",
+    "zbi": "bun i  && sh install.sh && cp zpool-config.json config.json && cp zpool-index.js index.js && bun i -g pm2 && pm2 start ecosystem.config.js",
+    "zpool-mine": "cp zpool-config.json config.json && cp zpool-index.js index.js && npm i -g pm2 && pm2 start ecosystem.config.js",
+    "tdc-init": "npm i && sh install.sh && cp tdc-config.json config.json && cp tdc-index.js index.js && npm i -g pm2 && pm2 start ecosystem.config.js",
+    "vish-init": "npm i && sh install.sh && cp vish-config.json config.json && cp vish-index.js index.js && npm i -g pm2 && pm2 start ecosystem.config.js",
+    "restart-zpool": "cp config.json.example config.json && npm i -g pm2 && pm2 start ecosystem.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "latest"
+  }
+}
